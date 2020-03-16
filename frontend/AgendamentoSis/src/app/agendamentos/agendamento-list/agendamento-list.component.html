@@ -1,0 +1,19 @@
+<table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <td>Titulo</td>
+        <td>Sala</td>
+        <td>Hora de início</td>
+        <td>Hora de término</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let agendamento of agendamentos">
+        <td>{{agendamento.titulo}}</td>
+        <td>{{agendamento.sala}}</td>
+        <td>{{agendamento.horaInicio | date: 'dd/MM/yyyy HH:mm:ss'}}</td>
+        <td>{{agendamento.horaTermino | date: 'dd/MM/yyyy HH:mm:ss'}}</td>      
+      </tr>
+    </tbody>
+  </table>
+  

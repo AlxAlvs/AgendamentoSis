@@ -1,0 +1,14 @@
+Instruções:
+
+- abrir o microsoft sql manager, criar um banco de dados chamado "agendamentos" executar o seguinte script:
+CREATE TABLE agendamento(
+   AgendamentoId UNIQUEIDENTIFIER PRIMARY KEY,
+   Titulo VARCHAR (50) NOT NULL,
+   Sala VARCHAR (50) NOT NULL,
+   horaInicio smalldatetime NOT NULL,
+   horaTermino smalldatetime NOT NULL
+);
+- abrir a aplicação da pasta web api no visual studio, executar a aplicação.
+- abrir no editor de texto a aplicação da pasta frontend executar a aplicação angular com o comando "ng serve".
+- acessar pelo navegador http://localhost:4200/
+ 
